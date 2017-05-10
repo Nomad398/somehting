@@ -3,7 +3,7 @@ module.exports = {
     KEY_ESC: 27,
     KEY_ENTER: 13,
     KEY_CHAT: 13,
-    KEY_FIREFOOD: 119,
+    KEY_FIREFOOD: 47,
     KEY_SPLIT: 32,
     KEY_LEFT: 37,
     KEY_UP: 38,
@@ -30,6 +30,6 @@ module.exports = {
     continuity: false,
     startPingTime: 0,
     toggleMassState: 0,
-    backgroundColor: '#f2fbff',
+    backgroundColor: '#000000',
     lineColor: '#000000',
 };

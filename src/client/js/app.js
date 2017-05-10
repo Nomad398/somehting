@@ -14,7 +14,7 @@ var debug = function(args) {
 };
 
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    global.mobile = true;
+    global.mobile = false;
 }
 
 function startGame(type) {
@@ -220,7 +220,7 @@ function setupSocket(socket) {
                 if(leaderboard[i].name.length !== 0)
                     status += '<span class="me">' + (i + 1) + '. ' + leaderboard[i].name + "</span>";
                 else
-                    status += '<span class="me">' + (i + 1) + ". An unnamed cell</span>";
+                    status += '<span class="me">' + (i + 1) + "</span>";
             } else {
                 if(leaderboard[i].name.length !== 0)
                     status += (i + 1) + '. ' + leaderboard[i].name;
@@ -265,7 +265,7 @@ function setupSocket(socket) {
         users = userData;
         foods = foodsList;
         viruses = virusList;
-        fireFood = massList;
+        //fireFood = massList;
     });
 
     // Death.
